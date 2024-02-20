@@ -1,0 +1,37 @@
+.homecomp{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 5%;
+  justify-content: center;
+
+}
+.infopart{
+  width: 50%;
+
+}
+.imgpart{
+  width: 50%;
+}
+.imgpart img{
+  width: 100%;
+}
+.titleetalk{
+  font-family: 'Roboto Serif' ,sans-serif;
+  font-size: 50px;
+  font-stretch: expanded;
+  font-weight: 600;
+  line-height: 74.94px;
+  display: flex;
+
+
+
+}
+.infotalk{
+  font-family: 'DM Sans';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.44px;
+
+
+}

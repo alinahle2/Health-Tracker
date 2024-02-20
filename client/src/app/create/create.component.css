@@ -1,0 +1,54 @@
+.underline-input {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #F5F5F5;
+  border-style: none;
+
+}
+input::placeholder {
+  color: rgba(0, 0, 0,1);
+  opacity: 0.4;
+}
+.createcomp{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.imgcreate{
+  width: 50%;
+}
+.imgcreate img {
+  width: 100%;
+  height: 100vh;
+}
+.formcomp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    width: 50%;
+  height: 100%;
+  padding: 2%;
+}
+.btnsub{
+  display: flex;
+  justify-content: end;
+
+}
+.buttonsub{
+  width: 150px;
+  height: 40px;
+  background-color: #FFC727;
+}
+.messagevalidback{
+  background-color: #FFC727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}

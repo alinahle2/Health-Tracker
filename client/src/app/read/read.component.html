@@ -1,0 +1,33 @@
+<div class="container">
+  <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Water Intake</th>
+        <th scope="col">Step Count</th>
+        <th scope="col">Sleep Hours</th>
+        <th scope="col">action</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let us of readData">
+        <td>{{ us.id }}</td>
+        <td>{{ us.name }}</td>
+        <td>{{ us.water }}</td>
+        <td>{{ us.step }}</td>
+        <td>{{ us.sleep }}</td>
+        <td class="btn-container">
+          <button class="btn btn-danger" (click)="deleteId(us.id)">Delete</button>
+          <button class="btn btn-primary" [routerLink]="['/create',us.id ]">Edit</button>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,33 @@
+<div class=" createcomp">
+  <form [formGroup]="userForm"  class="formcomp" >
+    <div *ngIf="createMessage" class=" messagevalidback alert " role="alert">
+      {{ createMessage }}
+    </div>
+    <div class="mt-2">
+      <label class="form-label" for="name">Name:</label>
+      <input type="text" id="name" required formControlName="name" placeholder="Enter your name" class="form-control underline-input">
+    </div>
+    <div class="mt-2">
+      <label class="form-label" for="water">Water Intake:</label>
+      <input type="number" id="water" required formControlName="water" placeholder="Enter your water intake" class="form-control underline-input">
+    </div>
+    <div class="mt-2">
+      <label class="form-label" for="step">Step Count:</label>
+      <input type="number" id="step" required formControlName="step" placeholder="Enter your step count" class="form-control underline-input">
+    </div>
+    <div class="mt-2">
+      <label class="form-label" for="sleep">Sleep Hours:</label>
+      <input type="number" id="sleep" required formControlName="sleep" placeholder="Enter your sleep hours" class="form-control underline-input">
+    </div>
+    <div class="mt-2 btnsub" *ngIf="!getparamid">
+      <button class="btn  buttonsub " (click)="userSubmit()"> Create</button>
+    </div>
+    <div class="mt-2 btnsub" *ngIf="getparamid" >
+      <button class="btn buttonsub"  (click)="userupdate()" > update</button>
+    </div>
+
+  </form>
+  <div class="imgcreate">
+    <img src="../../assets/World health day.gif" alt="">
+  </div>
+</div>
